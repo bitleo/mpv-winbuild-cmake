@@ -13,7 +13,7 @@ ExternalProject_Add(mujs
             COMMAND install -d ${MINGW_INSTALL_PREFIX}/lib/pkgconfig
             COMMAND install -m644 mujs.h  ${MINGW_INSTALL_PREFIX}/include
             COMMAND install -m644 build/release/libmujs.a ${MINGW_INSTALL_PREFIX}/lib
-            COMMAND install -m644 build/release/mujs.pc ${MINGW_INSTALL_PREFIX}/lib/pkgconfig
+	    #COMMAND install -m644 build/release/mujs.pc ${MINGW_INSTALL_PREFIX}/lib/pkgconfig
     BUILD_IN_SOURCE 1
     LOG_DOWNLOAD 1 LOG_UPDATE 1 LOG_CONFIGURE 1 LOG_BUILD 1 LOG_INSTALL 1
 )

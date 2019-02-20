@@ -15,12 +15,11 @@ ExternalProject_Add(mpv
         rubberband
         uchardet
         openal-soft
-        mujs
         vulkan
         shaderc
         crossc
         vapoursynth
-    GIT_REPOSITORY https://github.com/mpv-player/mpv.git
+    GIT_REPOSITORY https://github.com/bitleo/leompv.git
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC}
         PKG_CONFIG=pkg-config
@@ -32,7 +31,6 @@ ExternalProject_Add(mpv
         --disable-manpage-build
         --enable-libmpv-shared
         --enable-lua
-        --enable-javascript
         --enable-libarchive
         --enable-libass
         --enable-libbluray
